@@ -1,5 +1,4 @@
 package com.javarush.lifttask;
-
 import java.util.ArrayList;
 import java.util.List;
 

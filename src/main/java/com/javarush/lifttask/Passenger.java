@@ -1,5 +1,4 @@
 package com.javarush.lifttask;
-
 public class Passenger {
 
     public int desiredFloor;
