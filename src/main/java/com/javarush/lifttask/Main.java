@@ -3,9 +3,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.sun.media.jfxmedia.events.BufferListener;
-
-import java.util.ArrayList;
 
 public class Main {
     static List<Floor> floors = new ArrayList<>();
@@ -18,7 +15,7 @@ public class Main {
         Building building = new Building();
         Elevator elevator = new Elevator();
 
-        System.out.println("Number of floors " + building.getNumberOfFloors());
+        //System.out.println("Number of floors " + building.getNumberOfFloors());
 
         //инициализация
 
@@ -32,12 +29,12 @@ public class Main {
             floors.add(floor);
 
 
-            System.out.println("Создали floor # " + (currenFloor));
+            //System.out.println("Создали floor # " + (currenFloor));
 
             //создаю толпы пассажиров на каждом этаже
             int numberOfPassengersOnFloor = Event.rnd(1, 10);
 
-            System.out.println("На этаже № " + currenFloor + " добавлен " + numberOfPassengersOnFloor + " пассажиров ");
+            //System.out.println("На этаже № " + currenFloor + " добавлен " + numberOfPassengersOnFloor + " пассажиров ");
 
             int currentPassenger;
             for (currentPassenger = 1; currentPassenger <= numberOfPassengersOnFloor; currentPassenger++) {
@@ -50,7 +47,7 @@ public class Main {
                 Passenger passenger = new Passenger(desiredFloor, currenFloor);
                 floor.waitingPassengers.add(passenger);
 
-                System.out.println("На этаже № " + currenFloor + " добавлен пассажир " + passenger + " желающий выйти на этаже " + passenger.getDesiredFloor());
+                //System.out.println("На этаже № " + currenFloor + " добавлен пассажир " + passenger + " желающий выйти на этаже " + passenger.getDesiredFloor());
 
             }
         }
@@ -78,7 +75,7 @@ public class Main {
                             floors.get(i).waitingPassengers.add(liftPassenger);
 
 
-                            System.out.println("Из лифта на этаже № " + currentFloor + " вышел " + liftPassenger);
+                            //System.out.println("Из лифта на этаже № " + currentFloor + " вышел " + liftPassenger);
                         }
                     }
                 }
@@ -153,7 +150,7 @@ public class Main {
                             passengersInLift.remove();
                             floors.get(i).waitingPassengers.add(liftPassenger);
 
-                            System.out.println("Из лифта на этаже № " + currentFloor + " вышел " + liftPassenger);
+                            //System.out.println("Из лифта на этаже № " + currentFloor + " вышел " + liftPassenger);
                         }
                     }
                 }
