@@ -1,9 +1,9 @@
 package com.javarush.lifttask;
 public class Passenger {
 
-    public int desiredFloor;
+    private int desiredFloor;
 
-    public boolean onTheMove;
+    private boolean onTheMove;
 
     public boolean isOnTheMove() {
         return onTheMove;
@@ -21,7 +21,7 @@ public class Passenger {
 
     }
 
-    public void finishMove() {
+    public void finishTrip() {
         this.onTheMove = false;
     }
 }

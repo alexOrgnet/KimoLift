@@ -2,7 +2,7 @@ package com.javarush.lifttask;
 public class Building {
 
 
-    public int numberOfFloors = 0;
+    private int numberOfFloors = 0;
 
     public int getNumberOfFloors() {
         return numberOfFloors;
